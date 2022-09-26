@@ -1,0 +1,177 @@
+---
+title: "model diagram"
+output: html_notebook
+---
+
+```{r preloads, include=FALSE}
+library(tidyverse)
+library(ReDaMoR)
+library(jsonlite)
+```
+
+Data sets to include as of 19 Sept 2022:
+
+-   Assessors: Parcels
+-   BSEED:
+    -   Residential Certificates of Compliance
+    -   Commercial Certificates of Compliance
+    -   Certificates of Occupancy
+-   CRIO: Detroit Business Certification Register
+-   DAH: Blight Violations
+-   DFD: Fire Inspections
+-   DHD: Restaurants, [and Inspections, Violations]
+-   DPD: Project Green Light Locations
+-   OCP: Procurement Agreements
+-   LARA: State Licensed Childcare Providers
+
+Data sets to add: - BSEED - Business licenses - Liquor licenses - DWSD: Water bill payment - Treasury: Property Tax Payment Data
+
+```{r assessor_parcels}
+# SELECT * FROM parcels_open_data
+# LIMIT 1000;
+assess_parcels_1000 <- read_csv("Data/parcels_open_data_1000.csv", 
+    col_types = cols(object_id = col_character(), 
+        taxpayer_2 = col_skip(), property_class = col_character(), 
+        homestead_pre = col_character(), 
+        is_improved = col_logical(), year_built = col_date(format = "%Y"), 
+        sale_date = col_date(format = "%d/%m/%Y"), 
+        related = col_character(), subdivision = col_character(), 
+        geom = col_character()))
+
+```
+
+```{r bseed_residential_cofc}
+# SELECT * FROM active_cofc_final
+# LIMIT 1000;
+bseed_res_cofc_1000 <- read_csv("Data/active_cofc_final_1000.csv", 
+    col_types = cols(issued_date = col_date(format = "%d/%m/%Y"), 
+        expire_date = col_date(format = "%d/%m/%Y"), 
+        address_id = col_character()))
+
+```
+
+```{r bseed_commercial_cofc}
+# SELECT * FROM commercial_inspections_final
+# LIMIT 1000;
+bseed_comm_cofc_1000 <- read_csv("Data/commercial_inspections_final_1000.csv", 
+    col_types = cols(street_num = col_character(), 
+        record_status_date = col_datetime(format = "%d/%m/%Y %H:%M:%S")))
+
+```
+
+```{r bseed_cert_occupancy}
+# SELECT * FROM certificate_of_occupancy_final
+# LIMIT 1000;
+bseed_cert_occ_1000 <- read_csv("Data/certificate_of_occupancy_final_1000.csv", 
+    col_types = cols(street_num = col_character(), 
+        date_status = col_datetime(format = "%d/%m/%Y %H:%M:%S")))
+
+```
+
+```{r dhd_rest_est}
+# schema: dbt_dhd_inspections_restaurants
+# table: establishments_final : LIMIT 1000
+dhd_rest_est_1000 <- read_csv("Data/dhd_rest_establishments_final_1000.csv", 
+    col_types = cols(establishment_id = col_character(), 
+        zip_code = col_character(), license_number = col_character(), 
+        most_recent_license_date = col_date(format = "%m/%d/%Y"), 
+        address_id = col_character()))
+
+```
+
+```{r dhd_rest_insp}
+# inspections_final
+dhd_rest_insp_1000 <- read_csv("Data/dhd_rest_inspections_final_1000.csv", 
+    col_types = cols(inspection_id = col_character(), 
+        establishment_id = col_character(), 
+        inspection_date = col_date(format = "%m/%d/%Y"), 
+        inspector_id = col_character(), in_compliance = col_character()))
+```
+
+```{r dhd_rest_viol}
+# violations_intermediate
+dhd_rest_viol_1000 <- read_csv("Data/dhd_restaurants_violations_intermediate_1000.csv", 
+    col_types = cols(inspectionid = col_character(), 
+        inspectiondate = col_date(format = "%m/%d/%Y"), 
+        establishmentid = col_character(), 
+        date_corrected = col_date(format = "%m/%d/%Y")))
+```
+
+```{r crio_bus_reg}
+# SELECT * FROM business_register_final;
+crio_bus_reg_all <- read_csv("Data/crio_business_register_final.csv", 
+    col_types = cols(business_zip_code = col_character(), 
+        business_category_2 = col_skip(), 
+        authorized_contact_last_name = col_skip(), 
+        lon = col_double(), lat = col_double()))
+
+
+```
+
+```{r dah_blight}
+# SELECT * FROM blight_violations_final
+# LIMIT 1000;
+dah_blight_1000 <- read_csv("Data/dah_blight_violations_final.csv", 
+    col_types = cols(ticket_id = col_character(), 
+        violation_street_number = col_character(), 
+        violation_zip_code = col_character(), 
+        violator_id = col_character(), mailing_address_str_number = col_character(), 
+        non_us_str_code = col_character(), 
+        country = col_character(), violation_date = col_date(format = "%Y-%m-%d %H:%M:%S"), 
+        ticket_issued_time = col_character(), 
+        hearing_date = col_character(), hearing_time = col_character(), 
+        judgment_date = col_character(), 
+        clean_up_cost = col_double(), payment_date = col_character(), 
+        collection_status = col_character(), 
+        oid = col_character()))
+
+```
+
+```{r fire_inspections}
+# SELECT * FROM inspections
+# LIMIT 1000;
+dfd_inspections_1000 <- read_csv("Data/dfd_inspections_1000.csv", 
+    col_types = cols(IO_ID = col_character(), 
+        LatestInspDate = col_datetime(format = "%d/%m/%Y %H:%M:%S"), 
+        InspWithinLastYear = col_character(), address_id = col_character()))
+```
+
+```{r dpd_pgll}
+# dpd_project_greenlight_ago
+dpd_greenlight_812 <- read_csv("Data/dpd_project_greenlight_ago_812.csv", 
+    col_types = cols(precinct = col_double()))
+
+```
+
+```{r ocp}
+# ocp_contracts_ago.csv
+ocp_contracts_1000 <- read_csv("Data/ocp_contracts_ago.csv", 
+    col_types = cols(number = col_character(), 
+        amount = col_double(), start_date = col_datetime(format = "%d/%m/%Y %H:%M:%S"), 
+        end_date = col_datetime(format = "%d/%m/%Y %H:%M:%S")))
+
+```
+
+```{r lara_childcare}
+# schema: dbt_mi_odp_childcare_providers
+# tbl: child_care_providers_final
+lara_child_455 <- read_csv("Data/child_care_providers_final_455.csv", 
+    col_types = cols(capacity = col_integer(), 
+        zip = col_character(), address_id = col_character()))
+
+```
+
+```{r id_dataframes}
+# model_relational_data()
+new_model <- df_to_model(assess_parcels_1000, bseed_res_cofc_1000, bseed_comm_cofc_1000, bseed_cert_occ_1000, dhd_rest_est_1000, dhd_rest_insp_1000, dhd_rest_viol_1000, crio_bus_reg_all, dah_blight_1000, dfd_inspections_1000, dpd_greenlight_812, ocp_contracts_1000, lara_child_455)
+```
+
+```{r model_prompt}
+# new_model %>%
+#    auto_layout(lengthMultiplier=250) %>%
+#    plot()
+```
+
+```{r}
+m <- model_relational_data(modelInput = RelDataModel(list()))
+```

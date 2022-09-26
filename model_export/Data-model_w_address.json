@@ -1,0 +1,1838 @@
+{
+  "assess_parcels_1000": {
+    "tableName": ["assess_parcels_1000"],
+    "fields": [
+      {
+        "name": "object_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "parcel_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "ward",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "council_district",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "zip_code",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxpayer_1",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxpayer_street",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxpayer_city",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxpayer_state",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxpayer_zip",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "property_class",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "property_class_desc",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "use_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "use_code_desc",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "tax_status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "total_square_footage",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "total_acreage",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "frontage",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "depth",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "homestead_pre",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "nez",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "is_improved",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "num_bldgs",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "total_floor_area",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "style",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "year_built",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "sale_price",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "sale_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "assessed_value",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "taxable_value",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "landmap",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "related",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "zoning",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "subdivision",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "legal_description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": {},
+    "display": {
+      "x": [-392],
+      "y": [-382],
+      "color": ["#F8DEC3"],
+      "comment": ["NA"]
+    }
+  },
+  "bseed_res_cofc_1000": {
+    "tableName": ["bseed_res_cofc_1000"],
+    "fields": [
+      {
+        "name": "record_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "issued_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "expire_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "days_til_expiration",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "parcel_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["record_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-800],
+      "y": [-6],
+      "color": ["#9BC8FE"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["record_id"]
+  },
+  "bseed_comm_cofc_1000": {
+    "tableName": ["bseed_comm_cofc_1000"],
+    "fields": [
+      {
+        "name": "record_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "street_num",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_dir",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "record_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "task",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "record_status_date",
+        "type": "POSIXct",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "parcel_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["record_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-1073],
+      "y": [216],
+      "color": ["#9BC8FE"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["record_id"]
+  },
+  "bseed_cert_occ_1000": {
+    "tableName": ["bseed_cert_occ_1000"],
+    "fields": [
+      {
+        "name": "record_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "street_num",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_dir",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "date_status",
+        "type": "POSIXct",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "parcel_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["record_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-1072],
+      "y": [-7],
+      "color": ["#9BC8FE"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["record_id"]
+  },
+  "dhd_rest_est_1000": {
+    "tableName": ["dhd_rest_est_1000"],
+    "fields": [
+      {
+        "name": "establishment_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "zip_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "owner",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "license_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "license_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "most_recent_license_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "establishment_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "restaurant_complexity_level",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "review_frequency_in_days",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lat",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lon",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": [],
+    "indexes": [
+      {
+        "fields": ["establishment_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-1067],
+      "y": [-533],
+      "color": ["#FAC6DC"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["establishment_id"]
+  },
+  "dhd_rest_insp_1000": {
+    "tableName": ["dhd_rest_insp_1000"],
+    "fields": [
+      {
+        "name": "inspection_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "establishment_id",
+        "type": "character",
+        "nullable": false,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspection_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspection_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspector_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "priority_violations",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "foundation_violations",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "core_violations",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "total_corrected_priority___foun",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "in_compliance",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": [
+      {
+        "refTable": ["dhd_rest_est_1000"],
+        "key": [
+          {
+            "from": "establishment_id",
+            "to": "establishment_id"
+          }
+        ],
+        "cardinality": [0, -1, 1, 1]
+      },
+      {
+        "refTable": ["dhd_rest_viol_1000"],
+        "key": [
+          {
+            "from": "establishment_id",
+            "to": "establishmentid"
+          }
+        ],
+        "cardinality": [0, -1, 0, -1]
+      }
+    ],
+    "indexes": [
+      {
+        "fields": ["inspection_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-1062],
+      "y": [-279],
+      "color": ["#FAC6DC"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["inspection_id"]
+  },
+  "dhd_rest_viol_1000": {
+    "tableName": ["dhd_rest_viol_1000"],
+    "fields": [
+      {
+        "name": "inspectionid",
+        "type": "character",
+        "nullable": false,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspectiondate",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspection_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "establishmentid",
+        "type": "character",
+        "nullable": true,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "item1",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "item2",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "item3",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "problem1",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "problem2",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "problem3",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspectarea",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "location1",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "location2",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "corrected",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "days_to_correct",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "date_corrected",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "correction_description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "critical",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": [
+      {
+        "refTable": ["dhd_rest_est_1000"],
+        "key": [
+          {
+            "from": "establishmentid",
+            "to": "establishment_id"
+          }
+        ],
+        "cardinality": [1, 1, 0, -1]
+      },
+      {
+        "refTable": ["dhd_rest_insp_1000"],
+        "key": [
+          {
+            "from": "inspectionid",
+            "to": "inspection_id"
+          }
+        ],
+        "cardinality": [0, -1, 1, 1]
+      }
+    ],
+    "indexes": [
+      {
+        "fields": ["establishmentid"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-724],
+      "y": [-489],
+      "color": ["#FAC6DC"],
+      "comment": ["NA"]
+    }
+  },
+  "crio_bus_reg_all": {
+    "tableName": ["crio_bus_reg_all"],
+    "fields": [
+      {
+        "name": "business_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_street_address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_city",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_state",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_zip_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_based_business",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_headquartered_business",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_small_business",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_start_up",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_resident_based_business",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "detroit_based_micro_business",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "woman_owned_business_enterprise",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "minority_owned_business_enterprise",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "industry_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_category_1",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "nigp_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "authorized_contact_first_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_phone_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_website",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "certifications",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lon",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lat",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": {},
+    "display": {
+      "x": [-107],
+      "y": [274],
+      "color": ["#8FE6E0"],
+      "comment": ["NA"]
+    }
+  },
+  "dah_blight_1000": {
+    "tableName": ["dah_blight_1000"],
+    "fields": [
+      {
+        "name": "ticket_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "ticket_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "agency_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "inspector_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violator_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_street_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_street_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_zip_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violator_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "mailing_address_str_number",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "mailing_address_str_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "city",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "state",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "zip_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "non_us_str_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "country",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_date",
+        "type": "Date",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "ticket_issued_time",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "hearing_date",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "hearing_time",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "judgment_date",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "disposition",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "fine_amount",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "admin_fee",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "state_fee",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "late_fee",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "discount_amount",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "clean_up_cost",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "judgment_amount",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "payment_amount",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "balance_due",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "payment_date",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "payment_status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "collection_status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "violation_address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "parcelno",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "oid",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["ticket_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-67],
+      "y": [-367],
+      "color": ["NA"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["ticket_id"]
+  },
+  "dfd_inspections_1000": {
+    "tableName": ["dfd_inspections_1000"],
+    "fields": [
+      {
+        "name": "IO_ID",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "Address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "OccupantName",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "StructureName",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "PropUseType",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "PropUseTypeDescription",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "InspectionType_Full",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "LatestInspDate",
+        "type": "POSIXct",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "InspWithinLastYear",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lon",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lat",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["IO_ID"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-465],
+      "y": [25],
+      "color": ["#DFFB86"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["IO_ID"]
+  },
+  "dpd_greenlight_812": {
+    "tableName": ["dpd_greenlight_812"],
+    "fields": [
+      {
+        "name": "address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "business_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "precinct",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "live_date",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "geom",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": {},
+    "display": {
+      "x": [-135],
+      "y": [18],
+      "color": ["#DFFB86"],
+      "comment": ["NA"]
+    }
+  },
+  "ocp_contracts_1000": {
+    "tableName": ["ocp_contracts_1000"],
+    "fields": [
+      {
+        "name": "number",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "description",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "status",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "supplier",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "city",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "state",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "start_date",
+        "type": "POSIXct",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "end_date",
+        "type": "POSIXct",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "contract_link",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["number"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-451],
+      "y": [267],
+      "color": ["#A9ECC9"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["number"]
+  },
+  "lara_child_455": {
+    "tableName": ["lara_child_455"],
+    "fields": [
+      {
+        "name": "license_number",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "facility_name",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "facility_type_code",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "facility_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "capacity",
+        "type": "integer",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "months_of_operation",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "full_day",
+        "type": "logical",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "zip",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "address_id",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lat",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "lon",
+        "type": "numeric",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["license_number"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-776],
+      "y": [231],
+      "color": ["#C6BDF1"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["license_number"]
+  },
+  "address": {
+    "tableName": ["address"],
+    "fields": [
+      {
+        "name": "address_id",
+        "type": "character",
+        "nullable": false,
+        "unique": true,
+        "comment": ""
+      },
+      {
+        "name": "street_num",
+        "type": "integer",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_name",
+        "type": "character",
+        "nullable": false,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_dir",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      },
+      {
+        "name": "street_type",
+        "type": "character",
+        "nullable": true,
+        "unique": false,
+        "comment": ""
+      }
+    ],
+    "foreignKeys": {},
+    "indexes": [
+      {
+        "fields": ["address_id"],
+        "unique": [true]
+      }
+    ],
+    "display": {
+      "x": [-752],
+      "y": [-224],
+      "color": ["NA"],
+      "comment": ["NA"]
+    },
+    "primaryKey": ["address_id"]
+  }
+}
